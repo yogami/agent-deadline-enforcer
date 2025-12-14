@@ -1,0 +1,22 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Task {
+  id          String   @id @default(uuid())
+  agentId     String   @map("agent_id")
+  description String
+  deadline    DateTime
+  status      String   @default("PENDING") // PENDING, COMPLETED, BREACHED
+  slaPolicy   String   @map("sla_policy")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@index([agentId])
+  @@index([status])
+  @@map("tasks")
+}

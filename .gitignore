@@ -1,0 +1,29 @@
+# Node
+node_modules/
+npm-debug.log*
+.npm/
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Testing
+test-results/
+playwright-report/
+coverage/
+
+# Misc
+.DS_Store
