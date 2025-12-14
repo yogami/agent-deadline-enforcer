@@ -1,4 +1,4 @@
-import prisma from '../db';
+import prisma from '@/infrastructure/db';
 import { IDeadlineRepository } from '../../domain/interfaces/IDeadlineRepository';
 import { CreateTaskInput, DeadlineTask } from '../../domain/entities/DeadlineTask';
 
