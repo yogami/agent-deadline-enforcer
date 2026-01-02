@@ -5,6 +5,8 @@ export interface DeadlineTask {
     deadline: Date;
     status: 'PENDING' | 'COMPLETED' | 'BREACHED';
     slaPolicy: 'STRICT' | 'FLEXIBLE';
+    zkProof?: string; // Base64 encoded ZK-SNARK proof
+    zkProofVerified?: boolean; // Whether the proof has been verified
     createdAt: Date;
     updatedAt: Date;
 }
