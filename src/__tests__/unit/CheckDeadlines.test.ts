@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest';
-import { CheckDeadlines } from '../../application/usecases/CheckDeadlines';
-import { IDeadlineRepository } from '../../domain/interfaces/IDeadlineRepository';
+import { CheckDeadlines } from '../../lib/deadline-enforcer/application/usecases/CheckDeadlines';
+import { IDeadlineRepository } from '../../lib/deadline-enforcer/domain/ports/IDeadlineRepository';
 
 describe('CheckDeadlines', () => {
     it('should mark overdue tasks as BREACHED', async () => {

@@ -1,4 +1,4 @@
-import { IDeadlineRepository } from '../../domain/interfaces/IDeadlineRepository';
+import { IDeadlineRepository } from '../../domain/ports/IDeadlineRepository';
 import { DeadlineTask } from '../../domain/entities/DeadlineTask';
 
 export class CheckDeadlines {

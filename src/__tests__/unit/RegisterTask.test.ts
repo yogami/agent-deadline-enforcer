@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { RegisterTask } from '../../application/usecases/RegisterTask';
-import { IDeadlineRepository } from '../../domain/interfaces/IDeadlineRepository';
+import { RegisterTask } from '../../lib/deadline-enforcer/application/usecases/RegisterTask';
+import { IDeadlineRepository } from '../../lib/deadline-enforcer/domain/ports/IDeadlineRepository';
 
 describe('RegisterTask', () => {
     let registerTask: RegisterTask;

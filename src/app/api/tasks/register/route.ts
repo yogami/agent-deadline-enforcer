@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { RegisterTask } from '@/application/usecases/RegisterTask';
+import { RegisterTask } from '@/lib/deadline-enforcer/application/usecases/RegisterTask';
 import { PostgresDeadlineRepository } from '@/infrastructure/repositories/PostgresDeadlineRepository';
 
 const repo = new PostgresDeadlineRepository();

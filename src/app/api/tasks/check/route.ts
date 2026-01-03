@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { CheckDeadlines } from '@/application/usecases/CheckDeadlines';
+import { CheckDeadlines } from '@/lib/deadline-enforcer/application/usecases/CheckDeadlines';
 import { PostgresDeadlineRepository } from '@/infrastructure/repositories/PostgresDeadlineRepository';
 
 const repo = new PostgresDeadlineRepository();

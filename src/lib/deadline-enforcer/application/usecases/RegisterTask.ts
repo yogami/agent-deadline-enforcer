@@ -1,4 +1,4 @@
-import { IDeadlineRepository } from '../../domain/interfaces/IDeadlineRepository';
+import { IDeadlineRepository } from '../../domain/ports/IDeadlineRepository';
 import { CreateTaskInput, DeadlineTask } from '../../domain/entities/DeadlineTask';
 
 export class RegisterTask {

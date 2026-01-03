@@ -1,6 +1,6 @@
 import prisma from '@/infrastructure/db';
-import { IDeadlineRepository } from '../../domain/interfaces/IDeadlineRepository';
-import { CreateTaskInput, DeadlineTask } from '../../domain/entities/DeadlineTask';
+import { IDeadlineRepository } from '../../lib/deadline-enforcer/domain/ports/IDeadlineRepository';
+import { CreateTaskInput, DeadlineTask } from '../../lib/deadline-enforcer/domain/entities/DeadlineTask';
 
 export class PostgresDeadlineRepository implements IDeadlineRepository {
     async saveTask(input: CreateTaskInput): Promise<DeadlineTask> {
