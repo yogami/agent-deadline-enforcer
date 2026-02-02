@@ -27,3 +27,7 @@ coverage/
 
 # Misc
 .DS_Store
+
+# Agent Context Injections
+.agent_rules.md
+.agent_catalog.md
